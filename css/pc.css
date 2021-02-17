@@ -1,0 +1,45 @@
+@media (min-width: 700px) {
+    .title {
+        padding: 4rem 0 1rem;
+        font-size: 3rem;
+    }
+
+    .rule {
+        margin-bottom: 1.4rem;
+        font-size: 1.4rem;
+    }
+
+    form {
+        margin-bottom: 2rem;
+    }
+
+    #range {
+        margin-bottom: 3rem;
+        width: 20rem;
+    }
+
+    form > label {
+        padding: 0.6rem;
+        font-size: 1.5rem;
+    }
+
+    #guess {
+        margin-bottom: 2rem;
+        font-size: 1.3rem;
+    }
+
+    form > button {
+        padding: 0.3rem 2rem;
+        font-size: 1.2rem;
+    }
+
+    .guess-result,
+    .game-result {
+        padding: 0.3rem 0;
+        font-size: 1.2rem;
+    }
+
+    .game-result {
+        font-size: 1.4rem;
+    }
+}

@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@600;800&display=swap");
+@import "mobile.css";
+@import "pc.css";
+
+:root {
+    --clr-green-100: #fcfffe;
+    --clr-green-200: #aeefdc;
+    --clr-green-400: #00b893;
+
+    --clr-yellow-400: #fdcb6d;
+
+    --clr-accent: #e84393;
+
+    --clr-black-300: #dfe6e9;
+    --clr-black-600: #b2bec3;
+    --clr-black-900: #2d3436;
+
+    --fw-regular: 600;
+    --fw-bold: 800;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+input,
+input::placeholder,
+button {
+    color: var(--clr-black-900);
+    font-family: "Baloo Da 2", sans-serif;
+    font-weight: var(--fw-regular);
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--clr-green-100);
+}
+
+.title {
+    text-align: center;
+    color: var(--clr-green-400);
+    font-weight: var(--fw-bold);
+}
+
+.rule {
+    text-align: center;
+    color: var(--clr-yellow-400);
+}
+
+.rule > span {
+    color: var(--clr-accent);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form > label {
+    color: var(--clr-black-600);
+}
+
+#guess {
+    width: 14ch;
+    text-align: center;
+    border-bottom: 2px solid var(--clr-green-200);
+    transition: border-bottom-color 0.2s ease-in-out;
+}
+
+#guess:focus {
+    border-bottom-color: var(--clr-green-400);
+}
+
+form > button {
+    border-radius: 0.2rem;
+    background-color: var(--clr-black-300);
+    cursor: pointer;
+}
+
+form > button:hover {
+    background-color: var(--clr-black-600);
+}
+
+.guess-result,
+.game-result {
+    text-align: center;
+}
